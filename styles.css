@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+}
+
+.btn {
+  background-color: rgb(180, 93, 180);
+  color: white !important;
+  border: none;
+}
+.btn:hover {
+  box-shadow: 1rem;
+  background-color: rgb(219, 125, 219);
+  font-style: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+hr {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+footer {
+  width: 100%;
+  margin: 0px;
+  background-color: rgb(43, 48, 53);
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  border-radius: 5rem;
+  padding: 5px;
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.vibrate-1 {
+  animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}

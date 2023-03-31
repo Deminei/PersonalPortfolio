@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:ital,wght@0,300;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 1.5s;
+      }
+    </style>
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  </head>
+  <body
+    onload="document.body.style.opacity='1'"
+    style="background-color: #ede3e9"
+  >
+    <!--Navbar-->
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo"
+            src="assets/favicon.ico"
+            alt="Deminei"
+            width="50"
+            height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="projects.html"
+              >Projects</a
+            >
+            <a class="nav-link" href="interests.html">Interests</a>
+          </div>
+        </div>
+        <a
+          target="_blank"
+          class="navbar-brand"
+          href="https://github.com/Deminei"
+          ><img
+            class="logo"
+            src="assets/icons8-github-96.png"
+            alt="Deminei Github"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+    </nav>
+    <!--Hero-->
+    <div class="container my-5" style="background-color: rgb(167, 192, 238)">
+      <div
+        class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+      >
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis" ;>
+            Featured Projects
+          </h1>
+          <p class="lead">
+            Here are some of my favorite projects I have deployed on GitHub
+            Pages. I had so much fun with these. Please take a look at my short
+            description of each. Then follow the GitHub page link in the footer
+            to see them in action!
+          </p>
+          <div
+            class="d-grid d-md-flex justify-content-md-start mb-4 mb-lg-3"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!--Project Cards-->
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col pb-5">
+        <div class="shadow card h-100">
+          <img
+            src="assets/animationproject.png"
+            class="card-img-top"
+            alt="project 1 image"
+          />
+          <div class="card-body">
+            <h5 class="card-title vibrate-1">Animation Project</h5>
+            <p class="card-text">
+              This one is simple and silly.<br />
+              I showcased a few animations I learned using only HTML and CSS!
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary d-flex flex-row-reverse"
+              ><a
+                target="_blank"
+                href="https://deminei.github.io/animations_project_deminei/"
+                ><img
+                  class="logo"
+                  src="assets/icons8-github-96.png"
+                  alt="Deminei Github to animations page"
+                  width="45"
+                  height="45" /></a
+              >Check out the Github page!</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col pb-5">
+        <div class="shadow card h-100">
+          <img
+            src="assets/coffeecats.png"
+            class="card-img-top"
+            alt="project 2 image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">First Bootstrap Project</h5>
+            <p class="card-text">
+              First time using Bootstrap.<br />
+              Positioning elements was a bit of a learning curve, but it wasn't
+              too confusing after a while.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary d-flex flex-row-reverse"
+              ><a
+                target="_blank"
+                href="https://deminei.github.io/BootstrapProjectDemieni/"
+                ><img
+                  class="logo"
+                  src="assets/icons8-github-96.png"
+                  alt="Deminei Github to coffee cats page"
+                  width="45"
+                  height="45" /></a
+              >Check out the Github page!</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col pb-5">
+        <div class="shadow card h-100">
+          <img
+            src="assets/toast.png"
+            class="card-img-top"
+            alt="project 3 image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">First Group Project</h5>
+            <p class="card-text">
+              Teamwork that made the dream work. We decided to have a little fun
+              with it and got all of the requirements included too.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary d-flex flex-row-reverse"
+              ><a
+                target="_blank"
+                href="https://palmersola.github.io/group-project-1/index.html"
+                ><img
+                  class="logo"
+                  src="assets/icons8-github-96.png"
+                  alt="Github page to group project"
+                  width="45"
+                  height="45" /></a
+              >Check out the Github page!</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-small">
+      <p>
+        © 2023 Deminei<br />
+        Contact@<a target="_blank" href="https://github.com/Deminei"
+          ><img
+            class="logo"
+            src="assets/icons8-github-96.png"
+            alt="Deminei Github"
+            width="50"
+            height="50" /></a
+        ><a target="_blank" href="https://icons8.com/icon/52539/github"></a>
+        Icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </p>
+    </footer>
+  </body>
+</html>
